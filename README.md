@@ -10,8 +10,10 @@ Currently it accepts these arugements:
 
 createBasicGui(*nameplox*) - Creates a screenGui in the StarterGui with the name you define it as. 
 
-createBasicFrame(*framename,sizex,sizey,posx,posy*) 
+createBasicFrame(*framename,sizex,sizey,posx,posy,drag*) drag = Boolean Value 
 
-createBasicTextButton(*textbuttonname,sizex,sizey,posx,posy*)
+createBasicTextButton(*textbuttonname,sizex,sizey,posx,posy,textwrapbol*) textwrapbol = Boolean Value
+
+createImageLabel(*imgname,imgsource,sizex,sizey,posx,posy,transpare*) transpare = Number value
 
 Will add more arugements later. 
