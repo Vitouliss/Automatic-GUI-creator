@@ -18,4 +18,4 @@ createImageLabel(*imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,
 
 createImageButton(Same as createImageLabel)
 
-Will add more arugements later. 
+Added some more arugements. 
