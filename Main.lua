@@ -1,8 +1,8 @@
 --Very Simple Automatic Gui Creation System by Vitouliss
 --Yes I know...It's quite stupid. Might add custom methods and stuff. I don't know. 
 
-function createBasicGui(nameplox)
-m = Instance.new("ScreenGui",game:GetService("StarterGui"))
+function createBasicGui(nameplox,place)
+m = Instance.new("ScreenGui",game:GetService(place))
 m.Name = nameplox
 end 
 
