@@ -8,7 +8,7 @@ ______________________________________________________________
 
 Currently it accepts these arugements:
 
-createBasicGui(*nameplox*) - Creates a screenGui in the StarterGui with the name you define it as. 
+createBasicGui(*nameplox, parent(Grammar matter)*) - Creates a screenGui in the StarterGui with the name you define it as. 
 
 createBasicFrame(*framename,sizex,sizey,posx,posy,drag*) drag = Boolean Value 
 
