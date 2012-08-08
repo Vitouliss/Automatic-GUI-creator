@@ -58,7 +58,7 @@ it to the people that actually know what they are doing.
 --]]
 
 function DoitAll()
-
+--This is just a example....
 createBasicGui("SOME NAME")
 createBasicFrame("IDIOT",0.3,0.3,0.3,0.3,false)
 createBasicTextButton("SomeTextThing",0.3,0.3,0.3,0.3,true)
