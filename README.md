@@ -14,6 +14,8 @@ createBasicFrame(*framename,sizex,sizey,posx,posy,drag*) drag = Boolean Value
 
 createBasicTextButton(*textbuttonname,sizex,sizey,posx,posy,textwrapbol*) textwrapbol = Boolean Value
 
-createImageLabel(*imgname,imgsource,sizex,sizey,posx,posy,transpare*) transpare = Number value
+createImageLabel(*imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize*) transpare = Number value
+
+createImageButton(Same as createImageLabel)
 
 Will add more arugements later. 
