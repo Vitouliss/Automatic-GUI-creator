@@ -27,13 +27,26 @@ tb.BackgroundTransparency = 0.3
 tb.TextWrapped = textwrapbol
 end
 
-function createImageLabel(imgname,imgsource,sizex,sizey,posx,posy,transpare)
+function createImageLabel(imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
 im = Instance.new("ImageLabel",lol)
 im.Name = imgname
 im.Position = UDim2.new(posx,0,posy,0)
 im.Size = UDim2.new(sizex,0,sizey,0)
 im.Image = imgsource
 im.BackgroundTransparency = transpare
+im.BorderColor3 = bordercolor
+im.BorderSizePizel = bordersize
+end
+
+function createImageButton(imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
+im = Instance.new("ImageButton",lol)
+im.Name = imgname
+im.Position = UDim2.new(posx,0,posy,0)
+im.Size = UDim2.new(sizex,0,sizey,0)
+im.Image = imgsource
+im.BackgroundTransparency = transpare
+im.BorderColor3 = bordercolor
+im.BorderSizePizel = bordersize
 end
 
 --[[
