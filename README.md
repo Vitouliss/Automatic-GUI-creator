@@ -12,10 +12,12 @@ createBasicGui(*nameplox, parent[Grammar matters]*) - Creates a screenGui in the
 
 createBasicFrame(*framename,sizex,sizey,posx,posy,drag*) drag = Boolean Value 
 
-createBasicTextButton(*textbuttonname,sizex,sizey,posx,posy,textwrapbol*) textwrapbol = Boolean Value
+createBasicTextButton(*par,textbuttonname,sizex,sizey,posx,posy,textwrapbol*) textwrapbol = Boolean Value
 
-createImageLabel(*imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize*) transpare = Number value
+createImageLabel(*par,imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize*) transpare = Number value
 
 createImageButton(Same as createImageLabel)
 
-Added some more arugements. 
+createBasicTextBox(textboxname, sizex, sizey, posx, posy, textwrapbol, multiline,par)
+
+Added some more arugements. Now you can set your own parent (So you can parent to a frame you created)
