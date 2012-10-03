@@ -1,10 +1,10 @@
 --Very Simple Automatic Gui Creation System by Vitouliss
---Yes I know...It's quite stupid. Might add custom methods and stuff. I don't know. 
+--Yes I know...It's quite stupid. Might add custom methods and stuff. I don't know.
 
 function createBasicGui(nameplox,place)
 m = Instance.new("ScreenGui",game:GetService(place))
 m.Name = nameplox
-end 
+end
 
 function createBasicFrame(framename,sizex,sizey,posx,posy,drag)
 lol = Instance.new("Frame",m)
@@ -14,9 +14,9 @@ lol.Position = UDim2.new(posx,0,posy,0) --Example: {0.300000012, 0}, {0.20000000
 lol.BackgroundTransparency = 0.3
 lol.BackgroundColor3 = Color3.new(-28,-28,-28)
 lol.Draggable = drag
-end 
+end
 
-function createBasicTextButton(textbuttonname,sizex,sizey,posx,posy,textwrapbol)
+function createBasicTextButton(par,textbuttonname,sizex,sizey,posx,posy,textwrapbol)
 tb = Instance.new("TextButton",lol)
 tb.Name = textbuttonname
 tb.Position = UDim2.new(posx,0,posy,0)
@@ -24,10 +24,10 @@ tb.Size = UDim2.new(sizex,0,sizey,0)
 tb.TextColor3 = Color3.new(-255,-255,-255)
 tb.BackgroundColor3 = Color3.new(-28,-28,-28)
 tb.BackgroundTransparency = 0.3
-tb.TextWrapped = textwrapbol
+tb.TextWrap = textwrapbol
 end
 
-function createImageLabel(imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
+function createImageLabel(par,imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
 im = Instance.new("ImageLabel",lol)
 im.Name = imgname
 im.Position = UDim2.new(posx,0,posy,0)
@@ -38,7 +38,7 @@ im.BorderColor3 = bordercolor
 im.BorderSizePizel = bordersize
 end
 
-function createImageButton(imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
+function createImageButton(par,imgname,imgsource,sizex,sizey,posx,posy,transpare,bordercolor,bordersize)
 im = Instance.new("ImageButton",lol)
 im.Name = imgname
 im.Position = UDim2.new(posx,0,posy,0)
@@ -49,21 +49,32 @@ im.BorderColor3 = bordercolor
 im.BorderSizePizel = bordersize
 end
 
+function createBasicTextBox(textboxname, sizex, sizey, posx, posy, textwrapbol, multiline,par)
+haxinput = Instance.new("TextBox",par)
+haxinput.Name = textboxname
+haxinput.Position = UDim2.new(posx,0,posy,0)
+haxinput.Size = UDim2.new(sizex,0,sizey,0)
+haxinput.TextWrap = textwrapbol
+haxinput.MultiLine = multiline
+end
+
 --[[
 
-The function that actually does the stuff and how to change what the outcome of the GUI looks like. 
+The function that actually does the stuff and how to change what the outcome of the GUI looks like.
 It's a lot of arugements I know...This isn't really going to be cool. But I'm probably just going to leave
-it to the people that actually know what they are doing. 
+it to the people that actually know what they are doing.
 
 --]]
 
 function DoitAll()
---This is just a example....
-createBasicGui("SOME NAME")
+--This is just a example....Disgusting isn't it?
+createBasicGui("SOME NAME","StarterGui")
 createBasicFrame("IDIOT",0.3,0.3,0.3,0.3,false)
-createBasicTextButton("SomeTextThing",0.3,0.3,0.3,0.3,true)
-createImageLabel("yeah the name","nope.avi",0.1,0.1,0.2,0.2)
+createBasicTextButton(lol,"SomeTextThing",0.3,0.3,0.3,0.3,true)
+createBasicTextBox("lol haxinput",0.1,0.1,0.2,0.2,true,true,lol)
 
-end 
+end
 
 DoitAll()
+
+
