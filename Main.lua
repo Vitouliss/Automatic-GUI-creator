@@ -1,5 +1,9 @@
---Very Simple Automatic Gui Creation System by Vitouliss
---Yes I know...It's quite stupid. Might add custom methods and stuff. I don't know.
+--[[ 
+
+Very Simple Automatic Gui Creation System by Vitouliss. Currently it is set as abandoned due to the wasted fact that 
+I would like to work on other things, besides this great but terribly executed idea. 
+
+--]]
 
 function createBasicGui(nameplox,place)
 m = Instance.new("ScreenGui",game:GetService(place))
@@ -58,13 +62,7 @@ haxinput.TextWrap = textwrapbol
 haxinput.MultiLine = multiline
 end
 
---[[
-
-The function that actually does the stuff and how to change what the outcome of the GUI looks like.
-It's a lot of arugements I know...This isn't really going to be cool. But I'm probably just going to leave
-it to the people that actually know what they are doing.
-
---]]
+-- I can't explain what I was even thinking here. And this was 8 months ago? 
 
 function DoitAll()
 --This is just a example....Disgusting isn't it?
