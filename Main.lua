@@ -1,7 +1,6 @@
 --[[ 
 
-Very Simple Automatic Gui Creation System by Vitouliss. Currently it is set as abandoned due to the wasted fact that 
-I would like to work on other things, besides this great but terribly executed idea. 
+Very Simple Automatic Gui Creation System by Vitouliss. Not even close to being finished.
 
 --]]
 
